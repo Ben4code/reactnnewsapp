@@ -147,6 +147,54 @@
         13,
         10
       ]
+    },
+    {
+      "id": 3,
+      "artist": "Kelvin Hart",
+      "title": "Lorem ipsum dolor sit amet",
+      "images": [
+        {
+          "img": "3_1.jpg",
+          "desc": "Quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?"
+        },
+        {
+          "img": "3_2.jpg",
+          "desc": "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae"
+        },
+        {
+          "img": "3_3.jpg",
+          "desc": "magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit"
+        }
+      ],
+      "views": 237,
+      "likes": [
+        13,
+        10
+      ]
+    },
+    {
+      "id": 4,
+      "artist": "Geneviv Nnaji",
+      "title": "Lorem ipsum dolor sit amet",
+      "images": [
+        {
+          "img": "4_1.jpg",
+          "desc": "Quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?"
+        },
+        {
+          "img": "3_2.jpg",
+          "desc": "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae"
+        },
+        {
+          "img": "3_3.jpg",
+          "desc": "magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit"
+        }
+      ],
+      "views": 237,
+      "likes": [
+        13,
+        10
+      ]
     }
   ]
 }

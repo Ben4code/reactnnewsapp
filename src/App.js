@@ -5,6 +5,7 @@ import store from './store';
 import { Provider } from 'react-redux';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom'
 import Home from './components/Home/Home';
+import News from './components/News';
 import Header from './components/layouts/Header';
 import Footer from './components/layouts/Footer';
 
@@ -16,6 +17,7 @@ class App extends Component {
           <div className="container">
             <Header />
             <Switch>
+              <Route exact path="/news/:id" component={News} />
               <Route exact path="/" component={Home} />
             </Switch>
             <Footer />

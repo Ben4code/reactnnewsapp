@@ -6,7 +6,7 @@ const Gallery = (props) => {
 
     const settings = {
         arrows: false,
-        dots: true,
+        dots: false,
         infinite: true,
         speed: 200,
         slidesToShow: 1,
