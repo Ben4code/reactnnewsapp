@@ -1,0 +1,3 @@
+export const GET_LATEST = 'GET_LATEST';
+export const GET_OTHERNEWS = 'GET_OTHERNEWS';
+export const GET_GALLERIES = 'GET_GALLERIRES';
