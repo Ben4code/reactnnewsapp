@@ -1,4 +1,6 @@
-import {GET_LATEST, GET_OTHERNEWS, GET_GALLERIES, GET_GALLERYITEM, GET_NEWS, CLEAR_NEWS, CLEAR_GALLERYITEM} from './types';
+import {GET_LATEST, GET_OTHERNEWS, GET_GALLERIES, 
+    GET_GALLERYITEM, GET_NEWS, CLEAR_NEWS, 
+    CLEAR_GALLERYITEM, NEWS_COUNTER, GALLERY_COUNTER} from './types';
 import axios from 'axios';
 
 const SERVER_API = 'http://localhost:3004';
@@ -56,4 +58,23 @@ export const clearNews = () => dispatch => {
 
 export const clearGalleryItem = () => dispatch => {
     return dispatch({type: CLEAR_GALLERYITEM, payload: []})
+}
+
+
+export const newsCounter = (id, array) => dispatch => {
+    axios.patch(`${SERVER_API}/articles/${id}`, {likes: array})
+    .then(res => {
+        //console.log('actions:', res.data)
+        return dispatch({type: NEWS_COUNTER, payload: res.data})
+        }    
+    );    
+}
+
+export const galleryCounter = (id, array) => dispatch => {
+    axios.patch(`${SERVER_API}/galleries/${id}`, {likes: array})
+    .then(res => {
+        //console.log('actions:', res.data)
+        return dispatch({type: GALLERY_COUNTER, payload: res.data})
+        }    
+    );    
 }

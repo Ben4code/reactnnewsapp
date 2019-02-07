@@ -2,6 +2,7 @@ import React, { Component } from 'react'
 import { getGalleryItem, clearGalleryItem } from '../actions/dispatchActions';
 import { connect } from 'react-redux';
 import Slider from 'react-slick';
+import LikesCounter from './UI/LikesCounter';
 
 
 
@@ -61,6 +62,7 @@ class GalleryItem extends Component {
                             )
                         })}
                     </Slider>
+                    <LikesCounter source="gallery" galleryId={gallery.id} likes={gallery.likes[0]} dislikes={gallery.likes[1]} />
                 </div>
             )
 
@@ -73,6 +75,7 @@ class GalleryItem extends Component {
         return (
             <div className="new_container">
                 {this.showGallery(item)}
+                
             </div>
         )
     }

@@ -1,4 +1,4 @@
-import { GET_LATEST, GET_OTHERNEWS, GET_NEWS, CLEAR_NEWS } from '../actions/types';
+import { GET_LATEST, GET_OTHERNEWS, GET_NEWS, CLEAR_NEWS, NEWS_COUNTER } from '../actions/types';
 
 
 const initialState = {
@@ -23,6 +23,12 @@ export default function (state = initialState, action) {
             }
         
         case GET_NEWS:
+            return {
+                ...state,
+                news : [action.payload]
+            }
+
+        case NEWS_COUNTER:
             return {
                 ...state,
                 news : [action.payload]

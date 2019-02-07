@@ -208,3 +208,38 @@ footer{
     font-size: 17px;
     line-height: 2rem;
 }
+
+
+/* ---------------
+    Likes Counter
+------------------ */
+.addLikes-wrapper{
+    margin-bottom: 20px;
+}
+.addLikes-wrapper h2{
+    font-weight: 300;
+    text-align: center;
+}
+.addLikes-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.addLikes-container .btn{
+    cursor: pointer;
+    text-align: center;
+    background: #f8f8f8;
+    flex: 1;
+    color: #b6d2e8;
+    font-size: 30px;
+    padding: 20px;
+}
+.addLikes-container .btn:hover{
+    background: #607d8b;
+}
+.addLikes-container .btn .like{
+    border-right: 1px solid #fff;
+}
+.addLikes-container .btn .dislike{
+    border-right: 1px solid #fff;
+}

@@ -1,4 +1,4 @@
-import { GET_GALLERIES, GET_GALLERYITEM, CLEAR_GALLERYITEM } from '../actions/types';
+import { GET_GALLERIES, GET_GALLERYITEM, CLEAR_GALLERYITEM, GALLERY_COUNTER } from '../actions/types';
 
 
 const initialState = {
@@ -25,7 +25,12 @@ export default function (state = initialState, action) {
                 ...state,
                 galleries : action.payload
             }
-
+        
+        case GALLERY_COUNTER:
+            return {
+                ...state,
+                galleries : [action.payload]
+            }
 
         default:
             return state
