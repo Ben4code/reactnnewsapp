@@ -20,7 +20,6 @@ const Gallery = (props) => {
     
 
     const showGallery = (slides) => {
-        console.log(slides)
         if (slides) {
             return (
                 <Slider {...settings} >
@@ -36,8 +35,9 @@ const Gallery = (props) => {
                             fontFamily: 'Fjalla One',
                             objectFit: 'cover'
                         }
+                        
                         return (
-                            <Link to={`/`} key={slide.id} > 
+                            <Link to={`/gallery/${slide.id}`} key={slide.id} > 
                                 <div className="slide-image" style={slick2}>
                                 </div>
                                 <div className="slide-cover">

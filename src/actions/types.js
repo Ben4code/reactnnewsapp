@@ -1,3 +1,7 @@
 export const GET_LATEST = 'GET_LATEST';
 export const GET_OTHERNEWS = 'GET_OTHERNEWS';
+export const GET_NEWS = 'GET_NEWS';
 export const GET_GALLERIES = 'GET_GALLERIRES';
+export const GET_GALLERYITEM = 'GET_GALLERYITEM';
+export const CLEAR_NEWS = 'CLEAR_NEWS'
+export const CLEAR_GALLERYITEM = 'CLEAR_GALLERYITEM'

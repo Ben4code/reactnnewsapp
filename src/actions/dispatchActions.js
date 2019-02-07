@@ -1,4 +1,4 @@
-import {GET_LATEST, GET_OTHERNEWS, GET_GALLERIES} from './types';
+import {GET_LATEST, GET_OTHERNEWS, GET_GALLERIES, GET_GALLERYITEM, GET_NEWS, CLEAR_NEWS, CLEAR_GALLERYITEM} from './types';
 import axios from 'axios';
 
 const SERVER_API = 'http://localhost:3004';
@@ -22,6 +22,16 @@ export const getOtherNews = () => dispatch => {
 }
 
 
+export const getNews = (id) => dispatch => {
+    axios.get(`${SERVER_API}/articles/${id}`)
+    .then(res => {
+        //console.log('actions:', res.data)
+        return dispatch({type: GET_NEWS, payload: res.data})
+        }    
+    );    
+}
+
+
 export const getGalleries = () => dispatch => {
     axios.get(`${SERVER_API}/galleries`)
     .then(res => {
@@ -29,4 +39,21 @@ export const getGalleries = () => dispatch => {
         return dispatch({type: GET_GALLERIES, payload: res.data})
         }    
     );    
+}
+
+export const getGalleryItem = (id) => dispatch => {
+    axios.get(`${SERVER_API}/galleries/${id}`)
+    .then(res => {
+        //console.log('actions:', res.data)
+        return dispatch({type: GET_GALLERYITEM, payload: res.data})
+        }    
+    );    
+}
+
+export const clearNews = () => dispatch => {
+    return dispatch({type: CLEAR_NEWS, payload: []})
+}
+
+export const clearGalleryItem = () => dispatch => {
+    return dispatch({type: CLEAR_GALLERYITEM, payload: []})
 }

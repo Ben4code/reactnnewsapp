@@ -19,7 +19,7 @@ import {connect } from 'react-redux';
       <div>
         <Latest latest={this.props.articles.latest}/>
         <OtherNews otherNews={this.props.articles.otherNews}/>
-        <Gallery galleries={this.props.galleries.galleries2}/>
+        <Gallery galleries={this.props.galleries.galleries}/>
       </div>
     )
   }
@@ -29,7 +29,7 @@ import {connect } from 'react-redux';
 const mapStateToProps = (state) => {
   return {
     articles: state.articles,
-    galleries: state.galleries1
+    galleries: state.galleries
   }
 }
 

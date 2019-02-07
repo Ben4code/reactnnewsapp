@@ -139,8 +139,13 @@ footer{
     margin-bottom: 0;
 
 }
-.slide-image{
+.slideImage{
+    height: 400px;
+    width: 400px;
+    background-position: center bottom;
+    background-size: cover;
     position: relative;
+    object-fit: cover;
 }
 .slide-cover{
     position: absolute;
@@ -152,4 +157,54 @@ footer{
     color: #fff;
     background-color:rgba(53, 53, 53, .64);
     width: 7rem;
+}
+.slide-desc{
+    box-sizing: border-box;
+    padding: 20px;
+    margin-bottom: 0;
+}
+
+
+
+/* ---------------
+    News
+------------------ */
+.new_container .tags{
+    background: #f8f8f8;
+    padding: 10px;
+    color: #c5c5c5;
+    font-size: 14px;
+}
+.new_container .tags span{
+    margin-right: 15px;
+}
+
+.new_container .top{
+    box-sizing: border-box;
+    padding: 10px;
+}
+
+.new_container.top h2{
+    font-weight: 700px;
+    font-size: 30px;
+    margin: 0;
+    line-height: 32px;
+}
+
+.new_container .top span{
+    color: #00BCD4;
+    font-weight: 300;
+    font-size: 11px;
+    margin-top: 10px;
+    display: inline-block;
+}
+.new_container img{
+    width: 100%;
+}
+
+.new_container .body_news{
+    padding: 20px;
+    font-weight: 300;
+    font-size: 17px;
+    line-height: 2rem;
 }

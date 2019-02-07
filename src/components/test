@@ -1,0 +1,32 @@
+return (
+                <div>
+                    <h2 className="top">
+                        The best of {galleries.artist}
+                    </h2>
+                    
+                    {/* <Slider {...settings} >
+                        {galleries.images.map((slide) => {
+
+                            const slick2 = {
+                                background: `url(/images/galleries/${slide.img})no-repeat`,
+                                height: '20rem',
+                                width: '400px',
+                                backgroundPosition: 'center bottom',
+                                backgroundSize: 'cover',
+                                position: 'relative',
+                                fontFamily: 'Fjalla One',
+                                objectFit: 'cover'
+                            }
+
+                            return (
+                                <Link key={slide.img} to={`/`}>
+                                    <div className="slide-image" style={slick2}></div>
+                                    <div className="slide-cover">
+                                        <h5 className="slide-name">{slide.artist}</h5>
+                                    </div>
+                                </Link>
+                            )
+                        })}
+                    </Slider> */}
+                </div>
+            )
